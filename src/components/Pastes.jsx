@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 function Pastes() {
   const Pastes = useSelector((state) => state.paste.pastes);
-  console.log(Pastes);
+  // console.log(Pastes);
 
   const dispatch = useDispatch();
 

@@ -25,6 +25,8 @@ const Home = () => {
     }
   }, [pasteId, allPastes]);
 
+
+
   const createPaste = () => {
     const paste = {
       title: title,
@@ -56,6 +58,8 @@ const Home = () => {
             {pasteId ? "Update Your Paste" : "Create a New Paste"}
           </h2>
 
+
+
           <div className="flex flex-col sm:flex-row sm:gap-6 gap-4">
             <input
               className="p-3 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#646cff] focus:border-transparent flex-1 text-zinc-500 font-bold"
@@ -74,7 +78,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-zinc-500 shadow-md rounded-lg text-zinc-600 font-semibold text-wrap text-xl mt-4">
+        <div className="bg-zinc-500 shadow-md rounded-lg text-zinc-400 font-semibold text-wrap text-xl mt-4">
           <textarea
             className="w-full h-[60vh] p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#646cff] focus:border-transparent hover:border-[#646cff] transition duration-300 resize-none"
             value={value}
